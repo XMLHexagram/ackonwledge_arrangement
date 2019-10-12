@@ -1,4 +1,5 @@
-
+#git的知识点小结
+0. 部分地方使用了自己的github用户名
 1. git config --global user.name "Hexagram"
    git config --global user.email "1471685806@qq.com"
    * 登记名字和邮箱以使用git
@@ -81,19 +82,25 @@
 36. git push origin *tag_name* 将标签推送到远程
     * git push origin --tags 将本地所有的标签推送到远程
 37. git push origin :refs/tags/*tag_name* 删除远程标签(目前不太懂原理,最好先删除本地标签)
+>在github上工作
+38. git clone git@github.com:lmx-Hexagram/learngit.git
+    * 先在github上把项目folk到自己的库里，再从github上自己的库里把项目clone下来
+    * 在自己本地修改好后，pull到github上自己的库里
+    * 在github的项目中发起pull request
 >git的自定义：
-38. git config --global color.ui true 显示颜色
-39. 忽略特殊文件
+1.  git config --global color.ui true 显示颜色
+2.  忽略特殊文件
     * 在工作区根目录创建<code>.gitignore</code>文件
     * 在<https://github.com/github/gitignore>中找到要用的配置文件
     * git add -f *file_name* 强制添加被忽略的文件
     * git check-ignore -v *file_name* 查看时那一条忽略规则，忽略了该文件
     * 还有<code>.gitignore要放在版本库里，换言之不能忽略该文件，这样可以方面以后管理</code>
-40. git config --global alias.*the_name_as_your_convinent* *command_of_git*
+3.  git config --global alias.*the_name_as_your_convinent* *command_of_git*
     * 以这种方式定义别名，下次使用时可以直接<code>git *the_name_as_your_convinent*</code>
     * --global参数使该命令针对这台电脑所有Git仓库有效
     * *git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"* **神仙用法**
 >以上
+<p style="text-align:right">lmx-Hexagram</p>
 
 
 
