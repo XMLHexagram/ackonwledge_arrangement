@@ -43,5 +43,5 @@
 18. git branch 列出所有分支
 19. git checkout _branch\_name_
 20. git merge dev 
-    * 把dev分支的结果合并到master分支上
+    * 把dev分支的结果合并到'当前所在'分支上
     * 此时是使用<code>Fast-forward</code>也就是'快进模式',是直接把master指向dev的当前提交 
