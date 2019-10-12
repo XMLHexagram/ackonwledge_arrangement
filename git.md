@@ -34,3 +34,14 @@
     * 也就是可以使用SSH和https两种协议
 >以上是链接远程仓库的方法
 
+>分支
+17. git checkout -b dev
+    * Switched to a new branch 'dev'
+    * 创建并切换到分支'dev'
+    * -b 参数表示创建并切换
+    * 以上语句等价于 git branch dev + git checkout dev
+18. git branch 列出所有分支
+19. git checkout _branch\_name_
+20. git merge dev 
+    * 把dev分支的结果合并到master分支上
+    * 此时是使用<code>Fast-forward</code>也就是'快进模式',是直接把master指向dev的当前提交 
