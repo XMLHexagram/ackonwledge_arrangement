@@ -32,7 +32,6 @@
     * git@github.com:用户名/仓库名.git
     * 也可以使用 git clone https://github.com/lmx-Hexagram/ackonwledge_arrangement.git
     * 也就是可以使用SSH和https两种协议 
->以上是链接远程仓库的方法
 
 >分支:
 17. git checkout -b dev
@@ -53,7 +52,8 @@
 23. git log --graph 查看分支合并图
 24. git merge --no--ff -m "*say_sth*" *branch\_name*
     * 使用<code>--no--ff</code>参数使在合并时禁用Fast-forward模式,并创建一个commit
->以上
+
+> 暂存工作现场：
 25. git stash 保存现在的工作现场(在当前分支)
 26. git stash list
 27. git stash apply 恢复暂存的工作现场
@@ -61,13 +61,13 @@
 28. git stash drop 删除暂存的工作现场
 29. git stash pop 恢复并删除
 30. git cherry-pick *name_of_commit* 在当前分支重现指定的提交(用来修bug)
->远程多人合作
+>远程多人合作:
 31. git remote -v 查看远程库的信息
 32. git push origin *branch_name* 将本地分支推送到origin
 33. git checkout -b *branch_name* orgin/*branch_name* 在本地创建和远程分支对应的分支，名字一致(不要在这里乱皮)
 34. git branch --set-upstream *branch_name* origin/*branch_name* 建立本地和远程分支的关联
->以上
->标签
+
+>标签:
 35. git tag命令簇
     * git tag 查看所有标签
     * git tag *tag_name* *commit_name*
@@ -81,8 +81,7 @@
 36. git push origin *tag_name* 将标签推送到远程
     * git push origin --tags 将本地所有的标签推送到远程
 37. git push origin :refs/tags/*tag_name* 删除远程标签(目前不太懂原理,最好先删除本地标签)
->以上
->git的自定义
+>git的自定义：
 38. git config --global color.ui true 显示颜色
 39. 忽略特殊文件
     * 在工作区根目录创建<code>.gitignore</code>文件
@@ -93,7 +92,7 @@
 40. git config --global alias.*the_name_as_your_convinent* *command_of_git*
     * 以这种方式定义别名，下次使用时可以直接<code>git *the_name_as_your_convinent*</code>
     * --global参数使该命令针对这台电脑所有Git仓库有效
-    * git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit" **神仙用法**
+    * *git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"* **神仙用法**
 >以上
 
 
