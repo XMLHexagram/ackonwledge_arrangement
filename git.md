@@ -19,7 +19,7 @@
 11. git reset HEAD *file*
 12. git rm *file*  
 > 连接到远程仓库:
-13. ssh-keygen -t rsa -C "1471685806@qq.com"
+13. ssh-keygen -t rsa -C "*your_email*"
     * 建立一个本地的ssh公钥和私钥，再把公钥丢到GitHub上
     * 建立时没有设置密码
 14. git remote add origin git@github.com:lmx-Hexagram/ackonwledge_arrangement.git
