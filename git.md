@@ -14,8 +14,8 @@
     * git reset HEAD *file* 把暂存区的修改退回的工作区
 9. git reflog 记录了使用的每一次命令
 10.  git checkout -- *file* 丢弃工作区的修改
-    * 按情况回到**版本库**或者**暂存区**的状态
-    * 实质是使用已存文件替换工作区的版本
+     * 按情况回到**版本库**或者**暂存区**的状态
+     * 实质是使用已存文件替换工作区的版本
 11. git reset HEAD *file*
 12. git rm *file*  
 > 连接到远程仓库:
@@ -31,10 +31,10 @@
     * 从远程仓库克隆
     * git@github.com:用户名/仓库名.git
     * 也可以使用 git clone https://github.com/lmx-Hexagram/ackonwledge_arrangement.git
-    * 也就是可以使用SSH和https两种协议
+    * 也就是可以使用SSH和https两种协议 
 >以上是链接远程仓库的方法
 
->分支
+>分支:
 17. git checkout -b dev
     * Switched to a new branch 'dev'
     * 创建并切换到分支'dev'
@@ -44,4 +44,10 @@
 19. git checkout _branch\_name_
 20. git merge dev 
     * 把dev分支的结果合并到'当前所在'分支上
-    * 此时是使用<code>Fast-forward</code>也就是'快进模式',是直接把master指向dev的当前提交 
+    * 此时是使用<code>Fast-forward</code>也就是'快进模式',是直接把master指向dev的当前提交
+21. git branch -d dev 删除分支
+22. git switch -c dev 创建并切换的新分支dev
+    * git switch _branch\_name_ 切换到已有的分支
+    * **推荐使用<code>switch</code>命令来切换和新建分支**
+23. git log --graph 查看分支合并图
+24. 
