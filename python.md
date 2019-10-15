@@ -34,8 +34,8 @@
         * s1 | s2 并集
 4. **函数:**
    ```
-   def *name_of_function* ():
-   return *a,b,c,etc*
+   def name_of_function(): 
+   return a,b,c,etc
    ```
    * return多个值时,返回值是一个tuple
    1. 必选参数
@@ -60,7 +60,7 @@
       * list[ -2: ] 会取出list[ -2 ],list[ -1 ] 
       * list[ -2,-1 ] 只会取出list[ -2 ]
       * list[ :10:2 ] 前十个数字，每隔两个取一个
-      * tuple和字符串也可以切片!!!切片后还是自己本生的数据类型
+      * tuple和字符串也可以切片!!!切片后还是自己本身的数据类型
    2. 迭代(Iteration)
       * ```from collections import Iterable```
         ```isinstance('sth',Iterable)``` 判断sth是否可迭代，返回True就是可以
@@ -109,4 +109,4 @@
       * 迭代器可以使用next()
       * 使用```iter()```将Iterable转换成Iteration
       * Iterator是一个数据流(甚至可以无限大)，是一个惰性计算数列
-   6. 
+   6.  
