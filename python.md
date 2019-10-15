@@ -60,6 +60,7 @@
       * list[ -2: ] 会取出list[ -2 ],list[ -1 ] 
       * list[ -2,-1 ] 只会取出list[ -2 ]
       * list[ :10:2 ] 前十个数字，每隔两个取一个
+      * **list[ ::-1 ]可以使list颠倒，常用于翻转字符串！**
       * tuple和字符串也可以切片!!!切片后还是自己本身的数据类型
    2. 迭代(Iteration)
       * ```from collections import Iterable```
