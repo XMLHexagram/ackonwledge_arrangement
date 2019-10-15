@@ -7,6 +7,12 @@
 2. print(r'''*sth*''') 可以预格式化内容,参数r将会忽略转义字符
 3. 常用数据类型
    * list = []
+        * 从0开始计数，倒数第一个是-1
+        * list.append() 追加元素到末尾
+        * list.insert(*poision*,*元素*) 在指定位置(索引)添加元素
+        * list.pop() 删除元素
+        * list [ *poision* ] = *sth* 直接赋值
    * tuple = () 
+        * 
    * dict = {}
    * set =([])
