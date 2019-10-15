@@ -109,4 +109,54 @@
       * 迭代器可以使用next()
       * 使用```iter()```将Iterable转换成Iteration
       * Iterator是一个数据流(甚至可以无限大)，是一个惰性计算数列
-   6.  
+   6. 函数式编程(Functional Programming)
+      * f=abs() 可以把变量指向函数
+      * 高阶函数(Higher-order function)
+         * ```map(f,[])```
+            * 第一给参数式函数，第二个参数是列表，返回一个list
+            * 可以用来：更直观的书写代码,把数字转字符串 
+         * reduce()
+            * 
+            ```python
+               from functools import reduce
+               def add(x,y):
+                  return x + y
+               reduce(add,[1,3,5,7,9])
+            ```
+            * reduce的结果为25，使用reduce实现了连加运算
+            * 
+            ```python
+               from functools import reduce
+               def fn(x,y):
+                  return x*10 + y
+               reduce(fn,[1,3,5,7,9])
+            ```
+            * reduce的结果为13579，使用reduce实现了将其转换成整数
+            * reduce实现了将上一次计算的输出作为下一次计算的输入
+         * filter() 用于过滤序列 
+            * 
+            ```python
+            def is_odd(n):
+               return n % 2 == 1
+            list(filter(is_odd),[1,2,3,4,5,6,7,8,9])
+            ``` 
+            * 结果：[ 1,3,5,7,9 ]
+            * filter()返回```Iterator```,是一个惰性序列，需要使用```list()```函数强迫其完成计算
+            * example
+            ```python
+            def _odd_iter():
+               n = 1
+               while True:
+                  n = n + 2
+                  yield n
+            def _not_devisible(n):
+               return lambda x:x % n > 0;
+            def primes():
+               yield 2
+               it = _odd_iter() #初始化序列
+               while True:
+                  n = next(it);
+                  yield n;
+                  it = filter(_not_devisible(n),it)
+            ```
+            * 找素数，也太巧妙了一点吧
