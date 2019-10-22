@@ -29,8 +29,29 @@
         * 通过 `` 实现嵌入多行字符串，并且会保留原格式
 3. 类型转换
     * go语言没有隐式类型转换
-4. 指针
-    * ```go    
+    * 必须使用类似于 int(*sth*)的强制转换
+4. 常量
+    * const name type = value
+        * const pi = 3.14
+        * const pi int = 3.14
+    * iota常量生成器
+        * ```go
+            type Weekday int
+
+            const (
+                Sunday Weekday = iota
+                Monday
+                Tuseday
+                Wednesday
+                Thursday
+                Friday
+                Saturday
+            )
+            ``` 
+        Sunday = 0, Monday = 1, etc
+
+5. 指针 
+     ```go    
         package main
         import "fmt"
         // 交换函数
@@ -50,5 +71,5 @@
             // 输出变量值
             fmt.Println(x, y)
     }
-    ```
+    ``` 
     * 经典例子,在c里面也是一样的
