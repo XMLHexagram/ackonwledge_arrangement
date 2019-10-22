@@ -18,6 +18,7 @@
         * 导入包
         * 导入的包必须使用
 2. 变量
+    * 首字母大写为导出变量，可以被其它包调用
     * var *name* int = 100
     * *name* := 100
     * a,b = b,a
@@ -27,10 +28,13 @@
     * 字符串
         * 拼接+ +=
         * 通过 `` 实现嵌入多行字符串，并且会保留原格式
-3. 类型转换
+3. 运算符
+    * 主要运j算符基本与C语言相同 
+    * 只允许使用a++,且**不允许:** a = a++ 
+4. 类型转换
     * go语言没有隐式类型转换
     * 必须使用类似于 int(*sth*)的强制转换
-4. 常量
+5. 常量
     * const name type = value
         * const pi = 3.14
         * const pi int = 3.14
@@ -46,11 +50,12 @@
                 Thursday
                 Friday
                 Saturday
-            )
+            )j
             ``` 
         Sunday = 0, Monday = 1, etc
+        * iota在每一次const出现时被重置为零，并且每新一行会自增1
 
-5. 指针 
+6. 指针 
      ```go    
         package main
         import "fmt"
@@ -73,3 +78,39 @@
     }
     ``` 
     * 经典例子,在c里面也是一样的
+
+7. 流程控制语句
+    1. 条件语句
+        * ```go
+            if bool_value {
+                /*True*/
+            } else {
+                /*False*/
+            }
+            ```
+    2. 循环语句
+        * 和C语言的for相同
+            ```go 
+                for init; condition; post { }
+            ```
+        * 和C语言的while相同
+            ```go
+                for condition { }
+            ``` 
+        * 和C语言的 ```for (;;) {}```相同
+            ```go
+                for { }
+            ```
+        * go语言for循环的range格式,可以像Python一样迭代,slice,map,数组,字符串,etc
+            * ```go
+                for key, value := range oldMap {
+                    newMap[key] = value
+                }
+                ```
+            * example 
+            ```go
+                number := [6]int{1,2,3,4,5} //没赋值默认是0
+                for i, x:= range number {
+                    fmt.Printf("第%d位的值 = %d\n",i,x)
+                }
+            ``` 
