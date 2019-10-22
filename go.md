@@ -1,3 +1,5 @@
+
+0.  {}的"{"不能换行
 1. 
     * ```go
         package main
@@ -17,7 +19,7 @@
     * import
         * 导入包
         * 导入的包必须使用
-2. 变量
+2.  变量
     * 首字母大写为导出变量，可以被其它包调用
     * var *name* int = 100
     * *name* := 100
@@ -28,13 +30,13 @@
     * 字符串
         * 拼接+ +=
         * 通过 `` 实现嵌入多行字符串，并且会保留原格式
-3. 运算符
+3.  运算符
     * 主要运j算符基本与C语言相同 
     * 只允许使用a++,且**不允许:** a = a++ 
-4. 类型转换
+4.  类型转换
     * go语言没有隐式类型转换
     * 必须使用类似于 int(*sth*)的强制转换
-5. 常量
+5.  常量
     * const name type = value
         * const pi = 3.14
         * const pi int = 3.14
@@ -55,7 +57,8 @@
         Sunday = 0, Monday = 1, etc
         * iota在每一次const出现时被重置为零，并且每新一行会自增1
 
-6. 指针 
+6.  指针 
+    * 与C语言指针类似
      ```go    
         package main
         import "fmt"
@@ -79,7 +82,7 @@
     ``` 
     * 经典例子,在c里面也是一样的
 
-7. 流程控制语句
+7.  流程控制语句
     1. 条件语句
         * ```go
             if bool_value {
@@ -113,4 +116,36 @@
                 for i, x:= range number {
                     fmt.Printf("第%d位的值 = %d\n",i,x)
                 }
-            ``` 
+            ```
+8.  函数
+    * 定义
+    ```go
+        func function_name( [parameter list] ) [return type] {
+            //函数体
+        }
+    ```
+    * ```go
+        func max(num1,num2 int) int {
+            var result int
+
+            if num1>num2 {
+                result = num1
+            } else {
+                result = num2
+            }
+            return result
+        }
+        ``` 
+    * 可以```return x,y```返回多个值
+    * 函数作为另一个函数的实参
+    * 闭包
+    * 方法
+9.  数组
+    * ```go
+        var variable_name [SIZE] variable_type {value,value,value,etc}
+        ```
+    * {}内value个数不得多于[ size ]中的size数字，可以少于(自动初始化)
+    * []内可以没有数字,会自动匹配
+    * 向函数传递数组参数
+    * 高维数组
+10.  结构体 
