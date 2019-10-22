@@ -156,7 +156,8 @@
         * 可以以```variable_name.functino_name()```调用
 9.  数组
     * ```go
-        var variable_name [SIZE] variable_type {value,value,value,etc}
+        var variable_name [SIZE]variable_type {value,value,value,etc}
+        var arr1 = [5]int{1,2,3,4,5}
         ```
     * {}内value个数不得多于[ size ]中的size数字，可以少于(会自动初始化)
     * []内可以没有数字,会自动匹配
@@ -188,4 +189,11 @@
     * 结构体指针
         * 可以通过结构体指针,在函数里改变结构体数据内容
 11. 切片(Slice)
-    * 
+    * ```go
+        var identifier []type
+        slice1 := make([]type, len)
+        ``` 
+        声明切片
+    * ```go
+        
+        ```  
