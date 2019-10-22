@@ -1,5 +1,7 @@
 
-0.  {}的"{"不能换行
+0.  
+    * {}的"{"不能换行
+    * go语言没有面向对象,结构体使用**方法 || 以结构体为参数的函数**来实现一定的功能
 1. 
     * ```go
         package main
@@ -137,15 +139,53 @@
         }
         ``` 
     * 可以```return x,y```返回多个值
-    * 函数作为另一个函数的实参
-    * 闭包
-    * 方法
+    * 函数作为另一个函数的实参##
+    * 闭包##
+    * 方法(注意与*以结构体为参数的函数*比较区别)
+        * ```go
+            func (variable_name variable_data_type) function_name() [return type]{
+                ...
+                return
+            }
+
+            func (c Circle) getArea() float64 {
+                return 3.14 * c.radius * c.radius
+            }
+            ```
+        * ()括号里可以是*命名类型*(这是什么？？？),**结构体类型**,一个指针
+        * 可以以```variable_name.functino_name()```调用
 9.  数组
     * ```go
         var variable_name [SIZE] variable_type {value,value,value,etc}
         ```
-    * {}内value个数不得多于[ size ]中的size数字，可以少于(自动初始化)
+    * {}内value个数不得多于[ size ]中的size数字，可以少于(会自动初始化)
     * []内可以没有数字,会自动匹配
-    * 向函数传递数组参数
-    * 高维数组
-10.  结构体 
+    * 向函数传递数组参数##
+    * 高维数组##
+10. 结构体
+    * ```go
+        type struct_name struct {
+            member definition;
+            member definition;
+            ...            
+            member definition;
+        }
+        variable_name := struct_name {value1,value2,etc}
+        variable_name := struct_name {key:value1,key:value2,etc}
+        ```
+
+    * 可以跳过一些member
+    * 使用 variable_name.member来访问结构体成员
+    * 结构体作为函数参数(类似但是等于方法) 
+        ```go
+            func func_name(variablestruct name) {
+            }
+
+            func printBook(book Books){
+            }
+        ```
+    * 然后可以定义操作struct的函数,需要以```func_name(variable_name)```的方式调用(与方法不同)
+    * 结构体指针
+        * 可以通过结构体指针,在函数里改变结构体数据内容
+11. 切片(Slice)
+    * 
