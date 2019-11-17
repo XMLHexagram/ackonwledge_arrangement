@@ -8,6 +8,7 @@
 |连接服务器||Xshell|
 |go语言|go环境(官网)|Goland|
 |红色家园后端|Node.js|WebStorm|
+|Python|Python3|Vscode|
 
 |非技术软件|    |   |
 |:----|:----|:----|
