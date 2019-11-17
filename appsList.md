@@ -17,7 +17,7 @@
 |office全家桶|||
 |压缩软件|BandZip||
 |网盘|百度网盘||
-|电脑检测|CPU-Z,MSI-Afterburner,3DMark||
+|电脑检测|CPU-Z,MSI-Afterburner,3DMark|AIDA64|
 |屏幕色温控制|f.lux||
 |科学操作|Sockboom|SStap,SSR(搭配)|
 |下载种子|Bitcomet(比特彗星)||
