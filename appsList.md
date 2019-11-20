@@ -9,6 +9,7 @@
 |go语言|go环境(官网)|Goland|
 |红色家园后端|Node.js|WebStorm|
 |Python|Python3|Vscode|
+|yarn|||
 
 |非技术软件|    |   |
 |:----|:----|:----|
