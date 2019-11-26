@@ -9,6 +9,8 @@
 |go语言|go环境(官网)|Goland|
 |红色家园后端|Node.js|WebStorm|
 |Python|Python3|Vscode|
+|Vue|vue.js|HBuilderX|
+|测API||postman|
 
 |非技术软件|    |   |
 |:----|:----|:----|
