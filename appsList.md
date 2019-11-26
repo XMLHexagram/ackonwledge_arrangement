@@ -11,6 +11,7 @@
 |Python|Python3|Vscode|
 |Vue|vue.js|HBuilderX|
 |测API||postman|
+|yarn|||
 
 |非技术软件|    |   |
 |:----|:----|:----|
