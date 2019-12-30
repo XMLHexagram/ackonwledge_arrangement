@@ -9,7 +9,7 @@
 |go语言|go环境(官网)|Goland|
 |红色家园后端|Node.js|WebStorm|
 |Python|Python3|Vscode|
-|Vue|vue.js|HBuilderX|
+|Vue|vue.js|webstorm,HBuilderX|
 |测API||postman|
 |Vue,yarn|||
 |浏览器|Chorme主力,Firefox辅助||
