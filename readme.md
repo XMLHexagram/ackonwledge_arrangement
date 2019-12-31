@@ -2,7 +2,7 @@
 
 作者:lmx-Hexagram
 
-转载请注明**作者及出处**,并附上Github仓库的链接
+转载请注明**作者及出处**,并附上Github仓库的链接(请附上该链接https://github.com/lmx-Hexagram/ackonwledge_arrangement)
 
 约定:Acknowledge Arrangement下简称AA
 
