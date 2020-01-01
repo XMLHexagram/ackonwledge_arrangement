@@ -14,4 +14,5 @@
 
 - [数学](./Math/Link.md)
 - [编程语言](./Lang/Link.md)
-- [工具](./Tools/Link.md)
+- [生产力工具](./codingTools/Link.md)
+- [其它工具](./Tools/Link.md)

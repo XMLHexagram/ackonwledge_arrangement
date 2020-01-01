@@ -1,5 +1,5 @@
 ## Contents
 
-- [应用清单](./appsList.md)
+- [Git](./git.md)
 
 [back to readme.md](../readme.md)
